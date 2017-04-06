@@ -1,0 +1,75 @@
+[
+  {
+    "text": "Main Navigation",
+    "heading": "true",
+    "translate": "sidebar.heading.HEADER"
+},
+  {
+    "text": "Extras",
+    "sref": "#",
+    "icon": "icon-cup",
+    "submenu": [
+      {
+        "text": "Blog",
+        "sref": "#",
+        "icon": "fa fa-angle-right",
+        "submenu": [
+          { "text": "List",         "sref": "app.blog"},
+          { "text": "Post",         "sref": "app.blog-post"},
+          { "text": "Articles",     "sref": "app.articles"},
+          { "text": "Article View", "sref": "app.article-view"}
+        ]
+      },
+      {
+        "text": "eCommerce123",
+        "sref": "#",
+        "icon": "fa fa-angle-right",
+        "submenu": [
+          { "text": "Orders",       "sref": "app.orders", "alert": "10", "label": "label label-info" },
+          { "text": "Order View",   "sref": "app.order-view"},
+          { "text": "Products",     "sref": "app.products"},
+          { "text": "Product View", "sref": "app.product-view"},
+          { "text": "Checkout",     "sref": "app.checkout"}
+        ]
+      },
+      { "text": "Todo List",   "sref": "app.todo", "translate": "sidebar.nav.extra.TODO" }
+    ],
+    "translate": "sidebar.nav.extra.EXTRA"
+  },
+  {
+    "text": "Multilevel",
+    "icon": "fa fa-folder-open-o",
+    "sref": "app.multilevel",
+    "submenu": [
+      {
+        "text": "Level 1",
+        "sref": "app.multilevel.level1",
+        "icon": "icon-folder",
+        "submenu": [
+          {"text": "Level1 Item", "sref": "app.multilevel.level1.item", "icon": "fa fa-file" },
+          {
+            "text": "Level 2",
+            "sref": "app.multilevel.level1.level2",
+            "icon": "icon-folder",
+            "submenu": [
+              {
+                "text": "Level 3",
+                "icon": "icon-folder",
+                "sref": "app.multilevel.level1.level2.level3",
+                "submenu": [
+                  { "text": "Level3 Item", "sref": "app.multilevel.level1.level2.level3.item", "icon": "fa fa-file-o" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Documentation",
+    "sref": "app.documentation",
+    "icon": "icon-graduation",
+    "translate": "sidebar.nav.DOCUMENTATION"
+  }
+]
