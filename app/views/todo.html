@@ -7,12 +7,12 @@
       <div class="pr-lg">
          <form class="mb-xl" ng-submit="todo.addTodo(todo)">
             <div class="form-group">
-               <input class="form-control" ng-trim="true" type="text" ng-model="todo.todo.title" placeholder="Task title.." required="required" />
+               <input class="form-control" ng-trim="true" type="text" ng-model="todo.todo.title" placeholder="Título" required="required" />
             </div>
             <div class="form-group">
-               <textarea class="form-control" ng-trim="true" ng-model="todo.todo.description" placeholder="Type a description.." rows="8"></textarea>
+               <textarea class="form-control" ng-trim="true" ng-model="todo.todo.description" placeholder="Adicionar descrição.." rows="8"></textarea>
             </div>
-            <button class="btn btn-primary btn-block" type="submit">{{todo.editingTodo ? 'Edit Todo' : 'Add Todo'}}</button>
+            <button class="btn btn-primary btn-block" type="submit">{{todo.editingTodo ? 'Editar' : 'Adicionar'}}</button>
          </form>
      </div>
    </div>
